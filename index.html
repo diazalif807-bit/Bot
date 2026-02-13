@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Saya - GitHub Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            background: #667eea;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        /* Features */
+        .features {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .github-corner {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #24292e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links {
+                margin-top: 1rem;
+            }
+            
+            .nav-links a {
+                margin: 0 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">🚀 MyWebsite</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Fitur</a>
+            <a href="#about">Tentang</a>
+            <a href="#contact">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Selamat Datang di Website Saya</h1>
+        <p>Website pertama saya yang di-deploy menggunakan GitHub Pages</p>
+        <a href="#features" class="btn">Lihat Fitur</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Cepat & Gratis</h3>
+            <p>Hosting gratis dari GitHub Pages dengan performa cepat dan SSL otomatis</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Responsive</h3>
+            <p>Tampilan sempurna di desktop, tablet, dan smartphone</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h3>Auto Deploy</h3>
+            <p>Setiap push ke GitHub otomatis memperbarui website</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="padding: 4rem 2rem; max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 style="margin-bottom: 2rem;">Tentang Website Ini</h2>
+        <p style="margin-bottom: 1rem;">Website ini dibuat sebagai contoh deploy menggunakan GitHub Pages. Anda bisa membuat website serupa dengan mudah dan gratis!</p>
+        <div style="background: #f5f5f5; padding: 2rem; border-radius: 10px; text-align: left;">
+            <h4 style="margin-bottom: 1rem;">📋 Langkah-langkah deploy:</h4>
+            <ol style="padding-left: 1.5rem;">
+                <li style="margin-bottom: 0.5rem;">Buat repository di GitHub</li>
+                <li style="margin-bottom: 0.5rem;">Upload file HTML, CSS, JS</li>
+                <li style="margin-bottom: 0.5rem;">Aktifkan GitHub Pages di settings</li>
+                <li style="margin-bottom: 0.5rem;">Website langsung online!</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 4rem 2rem; background: #f9f9f9;">
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <h2 style="margin-bottom: 2rem;">Hubungi Saya</h2>
+            <p style="margin-bottom: 2rem;">Ingin membuat website seperti ini? Hubungi saya untuk kolaborasi!</p>
+            <div style="display: flex; justify-content: center; gap: 1rem;">
+                <a href="#" style="background: #333; color: white; padding: 0.8rem 2rem; text-decoration: none; border-radius: 5px;">Email</a>
+                <a href="#" style="background: #0077b5; color: white; padding: 0.8rem 2rem; text-decoration: none; border-radius: 5px;">LinkedIn</a>
+                <a href="#" style="background: #24292e; color: white; padding: 0.8rem 2rem; text-decoration: none; border-radius: 5px;">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 MyWebsite. Dibuat LIFX untuk GitHub Pages</p>
+    </footer>
+
+    <!-- GitHub Corner -->
+    <a href="https://github.com/username/repository-name" class="github-corner" target="_blank">
+        <span>📦</span>
+        <span>View on GitHub</span>
+    </a>
+</body>
+</html>
